@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <title>Raccoon's Adventure</title>
     <style>
@@ -57,7 +55,7 @@
         .heart svg {
             width: 100%;
             height: 100%;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
         }
 
         #score {
@@ -67,7 +65,7 @@
             background: rgba(255, 255, 255, 0.9);
             padding: 12px 25px;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border: 2px solid #ffd700;
         }
 
@@ -91,7 +89,7 @@
             font-size: 48px;
             margin-bottom: 20px;
             color: #ff4444;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         #gameOver p {
@@ -108,14 +106,14 @@
             border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             pointer-events: all;
         }
 
         #restartBtn:hover {
             background: linear-gradient(45deg, #45a049, #4CAF50);
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
         #instructions {
@@ -129,7 +127,7 @@
             border-radius: 15px;
             font-size: 16px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         #startScreen {
@@ -155,7 +153,7 @@
             font-size: 4rem;
             font-weight: bold;
             margin-bottom: 30px;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
             animation: bounce 2s infinite;
             display: flex;
             align-items: center;
@@ -178,7 +176,7 @@
             border-radius: 20px;
             cursor: pointer;
             margin: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -187,7 +185,7 @@
         #startBtn:hover {
             background: linear-gradient(45deg, #ff8e53, #ff6b6b);
             transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
         }
 
         #githubBtn {
@@ -199,7 +197,7 @@
             border-radius: 15px;
             cursor: pointer;
             margin: 10px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
@@ -208,7 +206,7 @@
         #githubBtn:hover {
             background: linear-gradient(45deg, #555, #777);
             transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
 
         #startInstructions {
@@ -233,7 +231,7 @@
             height: 24px;
         }
 
-        /* Men¨² de pausa */
+        /* Menï¿½ï¿½ de pausa */
         #pauseMenu {
             position: absolute;
             top: 50%;
@@ -254,7 +252,7 @@
             font-size: 48px;
             margin-bottom: 20px;
             color: #4CAF50;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         #pauseMenu p {
@@ -272,7 +270,7 @@
             border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             pointer-events: all;
             margin: 10px;
         }
@@ -280,7 +278,7 @@
         #continueBtn:hover {
             background: linear-gradient(45deg, #45a049, #4CAF50);
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
         #menuBtn {
@@ -292,7 +290,7 @@
             border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             pointer-events: all;
             margin: 10px;
         }
@@ -300,16 +298,23 @@
         #menuBtn:hover {
             background: linear-gradient(45deg, #ff8e53, #ff6b6b);
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0);
             }
+
             40% {
                 transform: translateY(-20px);
             }
+
             60% {
                 transform: translateY(-10px);
             }
@@ -322,12 +327,13 @@
         }
     </style>
 </head>
+
 <body>
     <div id="startScreen">
         <h1 id="gameTitle">
             <img src="assets/raccoonHeadRight.png" alt="Raccoon Left" class="raccoon-head">
             RACCOON'S ADVENTURE
-            <img src="assets/raccoonHeadRight.png" alt="Raccoon Right" class="raccoon-head">
+            <img src="assets/raccoonHeadLeft.png" alt="Raccoon Right" class="raccoon-head">
         </h1>
         <button id="startBtn">JUGAR</button>
         <a href="https://github.com/nicolascastellanosmena/" target="_blank" id="githubBtn">
@@ -347,10 +353,10 @@
         </div>
     </div>
 
-    <!-- Men¨² de pausa -->
+    <!-- Menï¿½ï¿½ de pausa -->
     <div id="pauseMenu">
         <h2>JUEGO PAUSADO</h2>
-        
+
         <button id="continueBtn">Continuar</button>
         <button id="menuBtn">Inicio</button>
     </div>
@@ -359,24 +365,27 @@
         <div id="hearts">
             <div class="heart">
                 <svg viewBox="0 0 24 24">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
-                          fill="#ff4444" stroke="#cc0000" stroke-width="1"/>
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                        fill="#ff4444" stroke="#cc0000" stroke-width="1" />
                 </svg>
             </div>
             <div class="heart">
                 <svg viewBox="0 0 24 24">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
-                          fill="#ff4444" stroke="#cc0000" stroke-width="1"/>
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                        fill="#ff4444" stroke="#cc0000" stroke-width="1" />
                 </svg>
             </div>
             <div class="heart">
                 <svg viewBox="0 0 24 24">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
-                          fill="#ff4444" stroke="#cc0000" stroke-width="1"/>
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                        fill="#ff4444" stroke="#cc0000" stroke-width="1" />
                 </svg>
             </div>
         </div>
-        <div id="score">?? Puntuaci¨®n: 0</div>
+        <div id="score">?? Puntuaciï¿½ï¿½n: 0</div>
     </div>
 
     <canvas id="gameCanvas"></canvas>
@@ -414,7 +423,7 @@
             time: 0
         };
 
-        // Cargar im¨¢genes
+        // Cargar imï¿½ï¿½genes
         const images = {};
         const imageNames = ['raccoon', 'bomb', 'coin', 'background', 'raccoonHeadLeft', 'raccoonHeadRight'];
         let imagesLoaded = 0;
@@ -430,219 +439,239 @@
             images[name].src = `assets/${name}.png`;
         });
 
-        // Jugador (mapache) - Movimiento m¨¢s fluido
-const player = {
-    x: 100,
-    y: 0,
-    width: 70,
-    height: 70,
-    velocityX: 0,
-    velocityY: 0,
-    speed: 8,
-    jumpPower: 18,
-    onGround: false,
-    direction: 1,
-    acceleration: 0.6,
-    friction: 0.85,
-    maxSpeed: 10,
-    animFrame: 0,
-    animSpeed: 0.2
-};
+        // Jugador (mapache) - Movimiento mï¿½ï¿½s fluido
+        const player = {
+            x: 100,
+            y: 0,
+            width: 70,
+            height: 70,
+            velocityX: 0,
+            velocityY: 0,
+            speed: 8,
+            jumpPower: 18,
+            onGround: false,
+            direction: 1,
+            acceleration: 0.6,
+            friction: 0.85,
+            maxSpeed: 10,
+            animFrame: 0,
+            animSpeed: 0.2
+        };
 
-// Arrays para objetos del juego
-let coins = [];
-let bombs = [];
-let particles = [];
+        // Arrays para objetos del juego
+        let coins = [];
+        let bombs = [];
+        let particles = [];
 
-// Controles m¨¢s suaves
-const keys = {};
-const keyPressed = {};
+        // Controles mï¿½ï¿½s suaves
+        const keys = {};
+        const keyPressed = {};
 
-// Event listeners para controles
-document.addEventListener('keydown', (e) => {
-    const key = e.key.toLowerCase();
-    keys[key] = true;
-    if (!keyPressed[key]) {
-        keyPressed[key] = true;
+        // Event listeners para controles
+        document.addEventListener('keydown', (e) => {
+            const key = e.key.toLowerCase();
+            keys[key] = true;
+            if (!keyPressed[key]) {
+                keyPressed[key] = true;
 
-        // Tecla P para pausar
-        if (key === 'p' && game.running && game.started) {
-            togglePause();
+                // Tecla P para pausar
+                if (key === 'p' && game.running && game.started) {
+                    togglePause();
+                }
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            const key = e.key.toLowerCase();
+            keys[key] = false;
+            keyPressed[key] = false;
+        });
+
+        // Botones
+        document.getElementById('restartBtn').addEventListener('click', resetGame);
+        document.getElementById('startBtn').addEventListener('click', startGameFromMenu);
+        document.getElementById('continueBtn').addEventListener('click', togglePause);
+        document.getElementById('menuBtn').addEventListener('click', goToMainMenu);
+
+        function togglePause() {
+            if (!game.started) return;
+
+            game.paused = !game.paused;
+            const pauseMenu = document.getElementById('pauseMenu');
+
+            if (game.paused) {
+                pauseMenu.style.display = 'block';
+            } else {
+                pauseMenu.style.display = 'none';
+                if (game.running) {
+                    gameLoop();
+                }
+            }
         }
-    }
-});
 
-document.addEventListener('keyup', (e) => {
-    const key = e.key.toLowerCase();
-    keys[key] = false;
-    keyPressed[key] = false;
-});
-
-// Botones
-document.getElementById('restartBtn').addEventListener('click', resetGame);
-document.getElementById('startBtn').addEventListener('click', startGameFromMenu);
-document.getElementById('continueBtn').addEventListener('click', togglePause);
-document.getElementById('menuBtn').addEventListener('click', goToMainMenu);
-
-function togglePause() {
-    if (!game.started) return;
-    game.paused = !game.paused;
-    const pauseMenu = document.getElementById('pauseMenu');
-    pauseMenu.style.display = game.paused ? 'block' : 'none';
-    if (!game.paused && game.running) {
-        gameLoop();
-    }
-}
-
-function goToMainMenu() {
-    game.running = false;
-    game.started = false;
-    game.paused = false;
-    document.getElementById('pauseMenu').style.display = 'none';
-    document.getElementById('startScreen').classList.remove('hidden');
-    document.getElementById('gameOver').style.display = 'none';
-}
-
-function startGame() {
-    if (imagesLoaded === imageNames.length) {
-        player.y = canvas.height - 200;
-        generateInitialObjects();
-        if (game.started && !game.paused) {
-            gameLoop();
+        function goToMainMenu() {
+            game.running = false;
+            game.started = false;
+            game.paused = false;
+            document.getElementById('pauseMenu').style.display = 'none';
+            document.getElementById('startScreen').classList.remove('hidden');
+            document.getElementById('gameOver').style.display = 'none';
         }
-    }
-}
 
-function startGameFromMenu() {
-    game.started = true;
-    game.running = true;
-    game.paused = false;
-    document.getElementById('startScreen').classList.add('hidden');
-    startGame();
-}
+        function startGame() {
+            if (imagesLoaded === imageNames.length) {
+                player.y = canvas.height - 200;
+                generateInitialObjects();
+                if (game.started && !game.paused) {
+                    gameLoop();
+                }
+            }
+        }
 
-function gameLoop() {
-    if (!game.running || game.paused) return;
-    game.time += 1 / 60;
-    update();
-    draw();
-    requestAnimationFrame(gameLoop);
-}
+        function startGameFromMenu() {
+            game.started = true;
+            game.running = true;
+            game.paused = false;
+            document.getElementById('startScreen').classList.add('hidden');
+            startGame();
+        }
 
-function update() {
-    const groundY = canvas.height - 100;
-    let targetVelocityX = 0;
+        function gameLoop() {
+            if (!game.running || game.paused) return;
 
-    if (keys['arrowleft'] || keys['a']) {
-        targetVelocityX = -player.maxSpeed;
-        player.direction = -1;
-    }
-    if (keys['arrowright'] || keys['d']) {
-        targetVelocityX = player.maxSpeed;
-        player.direction = 1;
-    }
+            game.time += 1 / 60;
+            update();
+            draw();
+            requestAnimationFrame(gameLoop);
+        }
 
-    const velocityDiff = targetVelocityX - player.velocityX;
-    player.velocityX += velocityDiff * player.acceleration;
+        function update() {
+            const groundY = canvas.height - 100;
 
-    if (targetVelocityX === 0) {
-        player.velocityX *= player.friction;
-    }
+            // Movimiento mï¿½ï¿½s fluido del jugador
+            let targetVelocityX = 0;
 
-    if ((keys['arrowup'] || keys['w']) && player.onGround) {
-        player.velocityY = -player.jumpPower;
-        player.onGround = false;
-        createParticles(player.x + player.width / 2, player.y + player.height, 5, '#ffffff');
-    }
+            if (keys['arrowleft'] || keys['a']) {
+                targetVelocityX = -player.maxSpeed;
+                player.direction = -1;
+            }
+            if (keys['arrowright'] || keys['d']) {
+                targetVelocityX = player.maxSpeed;
+                player.direction = 1;
+            }
 
-    player.velocityY += 0.9;
+            // Interpolaciï¿½ï¿½n suave de velocidad
+            const velocityDiff = targetVelocityX - player.velocityX;
+            player.velocityX += velocityDiff * player.acceleration;
 
-    player.x += player.velocityX;
-    player.y += player.velocityY;
+            // Aplicar fricciï¿½ï¿½n cuando no hay input
+            if (targetVelocityX === 0) {
+                player.velocityX *= player.friction;
+            }
 
-    if (player.x < 0) {
-        player.x = 0;
-        player.velocityX = 0;
-    }
-    if (player.x > canvas.width - player.width) {
-        player.x = canvas.width - player.width;
-        player.velocityX = 0;
-    }
+            // Salto mejorado
+            if ((keys['arrowup'] || keys['w']) && player.onGround) {
+                player.velocityY = -player.jumpPower;
+                player.onGround = false;
+                createParticles(player.x + player.width / 2, player.y + player.height, 5, '#ffffff');
+            }
 
-    if (player.y + player.height >= groundY) {
-        player.y = groundY - player.height;
-        player.velocityY = 0;
-        player.onGround = true;
-    }
+            // Aplicar gravedad
+            player.velocityY += 0.9;
 
-    if (Math.abs(player.velocityX) > 0.5) {
-        player.animFrame += player.animSpeed;
-    }
+            // Actualizar posiciï¿½ï¿½n
+            player.x += player.velocityX;
+            player.y += player.velocityY;
 
-    updateFallingObjects();
-    updateParticles();
-    checkCoinCollisions();
-    checkBombCollisions();
+            // Lï¿½ï¿½mites horizontales con rebote suave
+            if (player.x < 0) {
+                player.x = 0;
+                player.velocityX = 0;
+            }
+            if (player.x > canvas.width - player.width) {
+                player.x = canvas.width - player.width;
+                player.velocityX = 0;
+            }
 
-    if (Math.random() < 0.008 + game.time * 0.0001) spawnCoin();
-    if (Math.random() < 0.004 + game.time * 0.00005) spawnBomb();
-}
+            // ColisiÃ³n con el suelo
+            if (player.y + player.height >= groundY) {
+                player.y = groundY - player.height;
+                player.velocityY = 0;
+                player.onGround = true;
+            }
 
-function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Animaciï¿½ï¿½n del personaje
+            if (Math.abs(player.velocityX) > 0.5) {
+                player.animFrame += player.animSpeed;
+            }
 
-    if (images.background.complete) {
-  // Escalamos el fondo a la altura del canvas, manteniendo su relaci¨®n de aspecto
-  const scale = canvas.height / images.background.height;
-  const scaledW = images.background.width * scale;
+            // Actualizar objetos que caen
+            updateFallingObjects();
+            updateParticles();
 
-  // Offset horizontal en bucle
-  const bgOffset = (game.time * 20) % scaledW;
+            // Verificar colisiones
+            checkCoinCollisions();
+            checkBombCollisions();
 
-  // Dibujamos dos im¨¢genes una detr¨¢s de otra para que se vea continua
-  ctx.drawImage(images.background, -bgOffset, 0, scaledW, canvas.height);
-  ctx.drawImage(images.background, scaledW - bgOffset, 0, scaledW, canvas.height);
-}
+            // Generar nuevos objetos
+            if (Math.random() < 0.008 + game.time * 0.0001) spawnCoin();
+            if (Math.random() < 0.004 + game.time * 0.00005) spawnBomb();
+        }
 
-    const groundY = canvas.height - 100;
-    const gradient = ctx.createLinearGradient(0, groundY, 0, canvas.height);
-    gradient.addColorStop(0, '#8B4513');
-    gradient.addColorStop(1, '#654321');
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, groundY, canvas.width, canvas.height - groundY);
+        function draw() {
+            // Limpiar canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    drawParticles();
+            // Dibujar fondo con paralaje
+            if (images.background.complete) {
+                const bgOffset = (game.time * 20) % canvas.width;
+                ctx.drawImage(images.background, -bgOffset, 0, canvas.width, canvas.height);
+                ctx.drawImage(images.background, canvas.width - bgOffset, 0, canvas.width, canvas.height);
+            }
 
-    ctx.save();
-    const bobbing = Math.sin(game.time * 8) * 2;
-    if (player.direction === -1) {
-        ctx.scale(-1, 1);
-        ctx.drawImage(images.raccoon,
-            -player.x - player.width,
-            player.y + (player.onGround ? bobbing : 0),
-            player.width, player.height);
-    } else {
-        ctx.drawImage(images.raccoon,
-            player.x,
-            player.y + (player.onGround ? bobbing : 0),
-            player.width, player.height);
-    }
-    ctx.restore();
+            // Dibujar suelo con textura
+            const groundY = canvas.height - 100;
+            const gradient = ctx.createLinearGradient(0, groundY, 0, canvas.height);
+            gradient.addColorStop(0, '#8B4513');
+            gradient.addColorStop(1, '#654321');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, groundY, canvas.width, canvas.height - groundY);
 
-    coins.forEach(coin => {
-        ctx.save();
-        ctx.translate(coin.x + coin.width / 2, coin.y + coin.height / 2);
-        ctx.rotate(coin.rotation);
-        ctx.drawImage(images.coin, -coin.width / 2, -coin.height / 2, coin.width, coin.height);
-        ctx.restore();
-    });
+            // Dibujar partï¿½ï¿½culas
+            drawParticles();
 
-    bombs.forEach(bomb => {
-        const shake = Math.sin(game.time * 20) * 1;
-        ctx.drawImage(images.bomb, bomb.x + shake, bomb.y, bomb.width, bomb.height);
-    });
-}
+            // Dibujar jugador con animaciï¿½ï¿½n
+            ctx.save();
+            const bobbing = Math.sin(game.time * 8) * 2;
+            if (player.direction === -1) {
+                ctx.scale(-1, 1);
+                ctx.drawImage(images.raccoon,
+                    -player.x - player.width,
+                    player.y + (player.onGround ? bobbing : 0),
+                    player.width, player.height);
+            } else {
+                ctx.drawImage(images.raccoon,
+                    player.x,
+                    player.y + (player.onGround ? bobbing : 0),
+                    player.width, player.height);
+            }
+            ctx.restore();
 
+            // Dibujar monedas con rotaciï¿½ï¿½n
+            coins.forEach(coin => {
+                ctx.save();
+                ctx.translate(coin.x + coin.width / 2, coin.y + coin.height / 2);
+                ctx.rotate(coin.rotation);
+                ctx.drawImage(images.coin, -coin.width / 2, -coin.height / 2, coin.width, coin.height);
+                ctx.restore();
+            });
+
+            // Dibujar bombas con oscilaciï¿½ï¿½n
+            bombs.forEach(bomb => {
+                const shake = Math.sin(game.time * 20) * 1;
+                ctx.drawImage(images.bomb, bomb.x + shake, bomb.y, bomb.width, bomb.height);
+            });
+        }
 
         function spawnCoin() {
             coins.push({
@@ -679,13 +708,13 @@ function draw() {
                 coin.y += coin.velocityY;
                 coin.velocityY += 0.2; // Gravedad
                 coin.rotation += coin.rotationSpeed;
-                
+
                 // Rebote en los bordes
                 if (coin.x <= 0 || coin.x >= canvas.width - coin.width) {
                     coin.velocityX *= -0.8;
                     coin.x = Math.max(0, Math.min(canvas.width - coin.width, coin.x));
                 }
-                
+
                 // Eliminar si toca el suelo o sale de pantalla
                 if (coin.y >= groundY || coin.y > canvas.height + 100) {
                     coins.splice(i, 1);
@@ -698,13 +727,13 @@ function draw() {
                 bomb.x += bomb.velocityX;
                 bomb.y += bomb.velocityY;
                 bomb.velocityY += 0.25; // Gravedad
-                
+
                 // Rebote en los bordes
                 if (bomb.x <= 0 || bomb.x >= canvas.width - bomb.width) {
                     bomb.velocityX *= -0.7;
                     bomb.x = Math.max(0, Math.min(canvas.width - bomb.width, bomb.x));
                 }
-                
+
                 // Eliminar si toca el suelo o sale de pantalla
                 if (bomb.y >= groundY || bomb.y > canvas.height + 100) {
                     bombs.splice(i, 1);
@@ -719,7 +748,7 @@ function draw() {
                     coins.splice(i, 1);
                     game.score += 100;
                     updateUI();
-                    createParticles(coin.x + coin.width/2, coin.y + coin.height/2, 10, '#ffd700');
+                    createParticles(coin.x + coin.width / 2, coin.y + coin.height / 2, 10, '#ffd700');
                 }
             }
         }
@@ -729,16 +758,16 @@ function draw() {
                 const bomb = bombs[i];
                 if (isColliding(player, bomb)) {
                     bombs.splice(i, 1);
-                    game.lives -= 0.5; // Medio coraz¨®n de da?o
+                    game.lives -= 0.5; // Medio corazï¿½ï¿½n de da?o
                     updateUI();
-                    createParticles(bomb.x + bomb.width/2, bomb.y + bomb.height/2, 15, '#ff4444');
-                    
+                    createParticles(bomb.x + bomb.width / 2, bomb.y + bomb.height / 2, 15, '#ff4444');
+
                     // Efecto de da?o
                     canvas.style.filter = 'brightness(150%) contrast(120%)';
                     setTimeout(() => {
                         canvas.style.filter = 'none';
                     }, 100);
-                    
+
                     if (game.lives <= 0) {
                         gameOver();
                     }
@@ -748,9 +777,9 @@ function draw() {
 
         function isColliding(rect1, rect2) {
             return rect1.x < rect2.x + rect2.width &&
-                   rect1.x + rect1.width > rect2.x &&
-                   rect1.y < rect2.y + rect2.height &&
-                   rect1.y + rect1.height > rect2.y;
+                rect1.x + rect1.width > rect2.x &&
+                rect1.y < rect2.y + rect2.height &&
+                rect1.y + rect1.height > rect2.y;
         }
 
         function createParticles(x, y, count, color) {
@@ -775,7 +804,7 @@ function draw() {
                 particle.y += particle.velocityY;
                 particle.velocityY += 0.3;
                 particle.life -= particle.decay;
-                
+
                 if (particle.life <= 0) {
                     particles.splice(i, 1);
                 }
@@ -795,12 +824,12 @@ function draw() {
         }
 
         function updateUI() {
-            document.getElementById('score').innerHTML = `ðŸ’° PuntuaciÃ³n: ${game.score}`;
-            
+            document.getElementById('score').innerHTML = `<img src="assets/coin.png" alt="Moneda" class="instruction-icon" style="margin-top:15px"> PuntuaciÃ³n: ${game.score}`;
+
             const hearts = document.querySelectorAll('.heart svg path');
             hearts.forEach((heart, index) => {
                 const heartValue = index + 1; // CorazÃ³n 1, 2, 3
-                
+
                 if (game.lives >= heartValue) {
                     // CorazÃ³n completo
                     heart.setAttribute('fill', '#ff4444');
@@ -813,27 +842,27 @@ function draw() {
                         defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
                         heart.parentElement.insertBefore(defs, heart);
                     }
-                    
+
                     let gradient = document.getElementById(gradientId);
                     if (!gradient) {
                         gradient = document.createElementNS('http://www.w3.org/2000/svg', 'linearGradient');
                         gradient.setAttribute('id', gradientId);
                         gradient.setAttribute('x1', '0%');
                         gradient.setAttribute('x2', '100%');
-                        
+
                         const stop1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
                         stop1.setAttribute('offset', '50%');
                         stop1.setAttribute('stop-color', '#ff4444');
-                        
+
                         const stop2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
                         stop2.setAttribute('offset', '50%');
                         stop2.setAttribute('stop-color', '#666666');
-                        
+
                         gradient.appendChild(stop1);
                         gradient.appendChild(stop2);
                         defs.appendChild(gradient);
                     }
-                    
+
                     heart.setAttribute('fill', `url(#${gradientId})`);
                     heart.setAttribute('stroke', '#cc0000');
                 } else {
@@ -865,7 +894,7 @@ function draw() {
             game.lives = 3;
             game.maxLives = 3;
             game.time = 0;
-            
+
             player.x = 100;
             player.y = canvas.height - 200;
             player.velocityX = 0;
@@ -873,15 +902,15 @@ function draw() {
             player.onGround = false;
             player.direction = 1;
             player.animFrame = 0;
-            
+
             coins = [];
             bombs = [];
             particles = [];
-            
+
             document.getElementById('gameOver').style.display = 'none';
             document.getElementById('startScreen').classList.add('hidden');
             canvas.style.filter = 'none';
-            
+
             updateUI();
             generateInitialObjects();
             gameLoop();
@@ -890,4 +919,5 @@ function draw() {
         updateUI();
     </script>
 </body>
+
 </html>
